@@ -11,30 +11,30 @@
             "settings":{
                 "clients":[
                     {
-                        "id":"986e0d08-b275-4dd3-9e75-f3094b36fa2a",
+                        "id":"08e8412f-e9c8-49d0-9904-08da1b4176cb",
                         "flow":"xtls-rprx-vision"
                     }
                 ],
                 "decryption":"none",
                 "fallbacks":[
                     {
-                        "dest":3001
+                        "dest":5001
                     },
                     {
                         "path":"/vless",
-                        "dest":3002
+                        "dest":5002
                     },
                     {
                         "path":"/vmess",
-                        "dest":3003
+                        "dest":5003
                     },
                     {
                         "path":"/trojan",
-                        "dest":3004
+                        "dest":5004
                     },
                     {
                         "path":"/shadowsocks",
-                        "dest":3005
+                        "dest":5005
                     }
                 ]
             },
@@ -43,13 +43,13 @@
             }
         },
         {
-            "port":3001,
+            "port":5001,
             "listen":"127.0.0.1",
             "protocol":"vless",
             "settings":{
                 "clients":[
                     {
-                        "id":"986e0d08-b275-4dd3-9e75-f3094b36fa2a"
+                        "id":"08e8412f-e9c8-49d0-9904-08da1b4176cb"
                     }
                 ],
                 "decryption":"none"
@@ -60,13 +60,13 @@
             }
         },
         {
-            "port":3002,
+            "port":5002,
             "listen":"127.0.0.1",
             "protocol":"vless",
             "settings":{
                 "clients":[
                     {
-                        "id":"986e0d08-b275-4dd3-9e75-f3094b36fa2a",
+                        "id":"08e8412f-e9c8-49d0-9904-08da1b4176cb",
                         "level":0
                     }
                 ],
@@ -80,7 +80,7 @@
                 }
             },
             "sniffing":{
-                "enabled":true,
+                "enabled":false,
                 "destOverride":[
                     "http",
                     "tls",
@@ -90,13 +90,13 @@
             }
         },
         {
-            "port":3003,
+            "port":5003,
             "listen":"127.0.0.1",
             "protocol":"vmess",
             "settings":{
                 "clients":[
                     {
-                        "id":"986e0d08-b275-4dd3-9e75-f3094b36fa2a",
+                        "id":"08e8412f-e9c8-49d0-9904-08da1b4176cb",
                         "alterId":0
                     }
                 ]
@@ -108,7 +108,7 @@
                 }
             },
             "sniffing":{
-                "enabled":true,
+                "enabled":false,
                 "destOverride":[
                     "http",
                     "tls",
@@ -118,13 +118,13 @@
             }
         },
         {
-            "port":3004,
+            "port":5004,
             "listen":"127.0.0.1",
             "protocol":"trojan",
             "settings":{
                 "clients":[
                     {
-                        "password":"986e0d08-b275-4dd3-9e75-f3094b36fa2a"
+                        "password":"08e8412f-e9c8-49d0-9904-08da1b4176cb"
                     }
                 ]
             },
@@ -136,7 +136,7 @@
                 }
             },
             "sniffing":{
-                "enabled":true,
+                "enabled":false,
                 "destOverride":[
                     "http",
                     "tls",
@@ -146,14 +146,14 @@
             }
         },
         {
-            "port":3005,
+            "port":5005,
             "listen":"127.0.0.1",
             "protocol":"shadowsocks",
             "settings":{
                 "clients":[
                     {
                         "method":"chacha20-ietf-poly1305",
-                        "password":"986e0d08-b275-4dd3-9e75-f3094b36fa2a"
+                        "password":"08e8412f-e9c8-49d0-9904-08da1b4176cb"
                     }
                 ],
                 "decryption":"none"
@@ -165,7 +165,7 @@
                 }
             },
             "sniffing":{
-                "enabled":true,
+                "enabled":false,
                 "destOverride":[
                     "http",
                     "tls",
